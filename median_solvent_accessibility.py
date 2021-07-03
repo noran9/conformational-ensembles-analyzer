@@ -1,4 +1,3 @@
-from Bio.PDB import DSSP, PDBParser
 from relative_asa import relative_asa
 import pandas as pd
 import numpy as np

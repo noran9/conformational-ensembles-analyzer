@@ -8,6 +8,7 @@ import numpy as np
 
 
 def compute_single_conformation_features(structure_name):
+
     if not os.path.exists('./single-conformations-features-' + structure_name):
         os.makedirs('./single-conformations-features-' + structure_name)
 

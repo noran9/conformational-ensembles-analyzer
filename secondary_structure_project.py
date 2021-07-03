@@ -1,11 +1,9 @@
 import math
-from Bio.PDB import PDBList, PPBuilder
-from Bio.PDB.PDBParser import PDBParser
+from Bio.PDB import PPBuilder
 
 
 def secondary_structure(conformation):
     # Load the structure
-    # structure = PDBParser(QUIET=True).get_structure(structure_name, "data/{}.pdb".format(structure_name))
 
     # Setting the different regions of the Ramachandran plot
     rama_ss_ranges = [(-180, -180, 80, 60, 'E', 'blue'),
