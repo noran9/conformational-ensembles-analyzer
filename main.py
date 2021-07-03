@@ -52,8 +52,9 @@ if args.single:
 
 if args.data:
     for filename in os.listdir('./data'):
-        structure_name = filename.replace('.pdb', '')
-        compute_single_conformation_features(structure_name)
+        if 'pdb' in filename:
+            structure_name = filename.replace('.pdb', '')
+            compute_single_conformation_features(structure_name)
 
 if args.single_ensemble:
     compute_ensemble_features(args.single_ensemble)
