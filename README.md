@@ -70,8 +70,7 @@ The cluster center conformations are translated in the folder `/translated-files
 
 ![](https://github.com/noran9/conformational-ensembles-analyzer/blob/main/images/pymol_PED00154e006.png)
 
-**Note**: If PyMOL does not launch or shows error, the script `pymol-image.py` can be loaded in PyMOL to generate the image. The values for structure name, optimal k and closest list
-can be found in the `cluster-centers` file.
+**Note**: If PyMOL does not launch or shows error, the script `pymol-script.py` can be loaded in PyMOL to generate the image. The values for structure name, optimal k and closest list can be found in the `cluster-centers` file.
 
 5. Run `python3 main.py -se SINGLE_ENSEMBLE` to compute ensemble features for one of the PDB files in the `\data` folder. Example: `python3 main.py -se PED00154e006`.
 A file for the ensemble is generated in the folder `ensemble-features` with the following features:
